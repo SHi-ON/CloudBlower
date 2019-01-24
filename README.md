@@ -1,7 +1,8 @@
 # CloudBlower
-IBM's Cloudant database inflator feeded from a CSV files.
 
-Cloudant database adapter to feed database with a CSV file.
+IBM Cloudant® database adapter/inflator fed with CSV file(s).
+
+More info at [here](https://www.ibm.com/cloud/cloudant) and documentations at [here](https://console.bluemix.net/docs/services/Cloudant/cloudant.html).
 
 
 
