@@ -1,8 +1,8 @@
-# IBM's Cloudant API implementation in Python
-# Cloudant database adapter to feed database with a CSV file.
-# by Shayan Amani (SHi-ON)
-# https://shayanamani.com
-# Sep 2018
+# IBM's CloudBlower API implementation in Python
+# CloudBlower database adapter to feed database with a CSV file.
+# by Shawn Azdam (SHi-ON)
+# https://shawn.azdam.com
+# September 2018
 
 from cloudant.client import Cloudant
 from cloudant.error import CloudantException
@@ -76,7 +76,7 @@ def csv_inflator(db):
             msg = "document '{0}' successfully created!"
             print(msg.format(r["ID"]))
 
-        # safety margin to not exceed Cloudant's Lite plan limit (10 write/sec)
+        # safety margin to not exceed CloudBlower's Lite plan limit (10 write/sec)
         if c == 8:
             c = 0
             time.sleep(2)
@@ -84,7 +84,7 @@ def csv_inflator(db):
     return db
 
 
-# just for testing and get familiarized with Cloudant functionality
+# just for testing and get familiarized with CloudBlower functionality
 def sample_inflator(db):
     # a sample document of data
     # last field is using for categorizing users (dummy variable) based on 3 levels (0, 1, 2)
